@@ -25,5 +25,21 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
-
+@import "../node_modules/bulma/sass/utilities/initial-variables";
 @import "../node_modules/bulma/bulma";
+
+@media screen and (min-width: $tablet){
+    .order-0{
+        order: 0;
+    }
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+    }
+}
+
+.image-center {
+    margin: 0 auto;
+}
