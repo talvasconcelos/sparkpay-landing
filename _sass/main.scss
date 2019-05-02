@@ -25,7 +25,12 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
+
 @import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+$family-sans-serif: "Karla", sans-serif;
+
 @import "../node_modules/bulma/bulma";
 
 @media screen and (min-width: $tablet){
@@ -42,4 +47,15 @@ $primary-invert: $pink-invert;
 
 .image-center {
     margin: 0 auto;
+}
+
+.blink::after{
+    content: '|';
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
