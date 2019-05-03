@@ -33,6 +33,10 @@ $family-sans-serif: "Karla", sans-serif;
 
 @import "../node_modules/bulma/bulma";
 
+html {
+    font-size: 18px;
+}
+
 @media screen and (min-width: $tablet){
     .order-0{
         order: 0;
