@@ -5,25 +5,39 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- OG -->
+  <meta property="og:title" content="Aceite Bitcoins no seu negócio" />
+  <meta name="twitter:title" content="Aceite Bitcoins no seu negócio">
+  <meta property="og:type" content="product" />
+  <meta property="og:description"
+    content="Farto de pagar contratos e taxas elevados para aceitar cartões bancários no seu negócio? Entre no futuro hoje!" />
+  <meta name="twitter:description"
+    content="Farto de pagar contratos e taxas elevados para aceitar cartões bancários no seu negócio? Entre no futuro hoje!">
+  <meta property="og:image" content="http://sparkpay.pt/images/spark_logo_b.jpg" />
+  <meta property="twitter:image" content="http://sparkpay.pt/images/spark_logo_b.jpg" />
+  <meta property="og:url" content="https://sparkpay.pt" />
+  <meta name="twitter:url" content="https://sparkpay.pt">
+  <meta property="og:site_name" content="Sparkpay" />
+  <!--  -->
   <title>SparkPay - Aceite Bitcoins no seu negócio</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="has-background-light">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="http://sparkpay.pt">
         <img src="images/spark_logo.svg" alt="Sparpay" width="28" height="28">
       </a>
     </div>
-  </nav>
+  </nav> -->
   <section class="hero is-light is-medium">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column order-1">
-            <img class="image image-center" src="/images/spark_logo_b.svg">
+            <img class="image image-logo image-center" src="/images/spark_logo_b.svg">
           </div>
           <div class="column is-two-thirds order-0">
             <div class="column">
@@ -38,7 +52,7 @@
                   <input class="input is-medium-desktop" type="email" name="email" placeholder="email">
                 </p>
                 <p class="control">
-                  <input class="button is-success is-medium-desktop" type="submit" value="Saber Mais">
+                  <input class="button is-primary is-medium-desktop" type="submit" value="Saber Mais">
                 </p>
               </form>
               <p>Procuramos comerciantes que queiram aceitar Bitcoin nos seus negócios, para um período experimental de
@@ -54,18 +68,18 @@
     <div class="container">
       <div class="columns is-variable is-6">
         <div class="column is-4">
-          <h1 class="subtitle has-text-success is-size-4 has-text-centered is-uppercase">simples</h1>
+          <h1 class="subtitle has-text-primary is-size-4 has-text-centered is-uppercase">simples</h1>
           <p>Tão simples como aceitar dinheiro, com a comodidade do cartão bancário, sem taxas ou contratos extra.</p>
           <p>Nós tratamos da parte complicada.</p>
         </div>
         <div class="column is-4">
-          <h1 class="subtitle has-text-success is-size-4 has-text-centered is-uppercase">rápido</h1>
+          <h1 class="subtitle has-text-primary is-size-4 has-text-centered is-uppercase">rápido</h1>
           <p>A Sparkpay usa Lightning Network. Os seus pagamentos são efectuados de forma imediata, segura e
             directamente
             na sua carteira.</p>
         </div>
         <div class="column is-4">
-          <h1 class="subtitle has-text-success is-size-4 has-text-centered is-uppercase">dinheiro 2.0</h1>
+          <h1 class="subtitle has-text-primary is-size-4 has-text-centered is-uppercase">dinheiro 2.0</h1>
           <p>O Bitcoin é o dinheiro do futuro. Alargue as possibilidades do seu negócio chegando a mais e novos tipos de
             cliente.</p>
         </div>
@@ -121,27 +135,37 @@
   <footer class="footer has-background-dark has-text-centered">
     <div class="container">
       <div class="columns">
-        <div class="column is-8-desktop is-offset-2-desktop">
+        <div class="column is-8-tablet is-offset-2-tablet">
           <p style="margin-top: 1rem;">
             <a href="http://bulma.io">
               <img src="images/spark_logo_w.svg" alt="logo" width="128" height="24">
             </a>
           </p>
-          <div class="column is-8-desktop is-offset-2-desktop">
-              <form class="field is-grouped" action="https://formspree.io/geral@sparkpay.pt" method="POST">
-                <p class="control is-expanded is-centered">
-                  <input class="input is-medium-desktop" type="email" name="replyto" placeholder="email">
-                </p>
-                <p class="control">
-                  <input class="button is-success is-medium-desktop" type="submit" value="Saber Mais">
-                </p>
-              </form>
+          <div class="column">
+            <form class="field is-grouped" action="https://formspree.io/geral@sparkpay.pt" method="POST">
+              <p class="control is-expanded is-centered">
+                <input class="input is-medium-desktop" type="email" name="replyto" placeholder="email">
+              </p>
+              <p class="control">
+                <input class="button is-primary is-medium-desktop" type="submit" value="Saber Mais">
+              </p>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <script type="text/javascript" src="lib/main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41200522-23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-41200522-23');
+  </script>
+
 </body>
 
 </html>

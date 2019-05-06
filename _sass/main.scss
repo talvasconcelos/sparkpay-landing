@@ -31,10 +31,13 @@ $primary-invert: $pink-invert;
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 $family-sans-serif: "Karla", sans-serif;
 
+$primary: #ff533d;
+
 @import "../node_modules/bulma/bulma";
 
 html {
-    font-size: 18px;
+    font-size: 16px;
+    font-size: calc(1rem + 0.3vw);
 }
 
 @media screen and (min-width: $tablet){
@@ -46,6 +49,16 @@ html {
     }
     .order-2{
         order: 2;
+    }
+}
+
+.image-logo {
+    max-width: 50vw;
+}
+
+@media screen and (min-width: $tablet){
+    .image-logo {
+        max-width: 100%;
     }
 }
 
